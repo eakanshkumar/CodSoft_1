@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <h1>Eakansh Chauhan</h1>
+            <p class="tagline">Web Developer</p>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="./assets/eakansh.jpg" alt="Eakansh Chauhan">
+            <div class="bio">
+                <p>Hello! I'm Eakansh Chauhan, a passionate web developer with a deep enthusiasm for creating websites
+                    that are not only visually appealing but also highly functional and user-friendly. Over the years,
+                    I’ve honed my skills in HTML, CSS, JavaScript, and React, enabling me to craft responsive,
+                    accessible, and performance-optimized web experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+            <li>Git & GitHub</li>
+            <li>React</li>
+            <li>NodeJS</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-item">
+                <img src="./assets/landingPage_img.PNG" alt="e commerce landing page">
+                <h3>Landing Page</h3>
+                <p>This project showcases my ability to create a clean, responsive and visually appealing landing page
+                    using HTML and CSS. I designed and structured the page with welldefined sections, organized columns,
+                    and a clear header and footer layout. </p>
+            </div>
+            <div class="project-item">
+                <img src="./assets//calculator_img.PNG" alt="Calculator">
+                <h3>Calculator</h3>
+                <p>This project demonstrates my skills in building an interactive calculator using HTML, CSS, and
+                    JavaScript. It features a clean user interface with a display screen and buttons for basic
+                    arithmetic operations including addition, subtraction, multiplication, and division.</p>
+            </div>
+            <div class="project-item">
+                <img src="./assets/porfolio_img.PNG" alt="Portfolio">
+                <h3>Portfolio</h3>
+                <p>This project is a fully responsive personal portfolio built using HTML and CSS, features a
+                    prominent header with my name and tagline, an engaging “About Me” section with a photo and bio, and
+                    a skills section highlighting my expertise. A dedicated projects section showcases my work with
+                    titles, descriptions, and visuals, while a resume section offers an easy PDF download link.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Download my resume:</p>
+        <a href="#" class="btn" download>Download Resume PDF</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact">
+            <div>
+                <h3>Address</h3>
+                <p><i class="fa fa-map-marker"></i> Behind Ryan International School</p>
+                <p>Ghaziabad</p>
+                <p>Email: eakansh9927@gmail.com</p>
+                <p>Phone: +91 7818826817</p>
+            </div>
+            <div id="service-div">
+                <form id="service-form">
+                    <h3>Request Service</h3>
+                    <div class="input-container">
+                        <i class="fa fa-user icon"></i>
+                        <input type="text" placeholder="Your Name">
+                    </div>
+                    <div class="input-container">
+                        <i class="fa fa-envelope icon"></i>
+                        <input type="email" placeholder="Your Email">
+                    </div>
+                    <div class="input-container">
+                        <i class="fa fa-phone icon"></i>
+                        <input type="tel" placeholder="Your Phone">
+                    </div>
+                    <div class="input-container">
+                        <i class="fa fa-briefcase icon"></i>
+                        <input type="text" placeholder="Service Needed">
+                    </div>
+                    <textarea placeholder="Describe your request..."></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div>
+                <h3>Social Media</h3>
+                <div id="social-media">
+                    <p><a href="https://facebook.com"><i class="fa fa-facebook"></i></a></p>
+                    <p><a href="https://instagram.com"><i class="fa fa-instagram"></i></a></p>
+                    <p><a href="https://linkedin.com"><i class="fa fa-linkedin"></i></a></p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy;2025. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
