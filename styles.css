@@ -402,4 +402,96 @@ footer {
         width: 90%;
         max-width: 300px;
     }
+
+    /* Make sure flex children behave and don't overlap */
+    #contact .contact>div {
+        min-width: 0;
+        min-height: 0;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 1;
+        clear: both;
+    }
+
+    /* Ensure form and social divs are not absolutely positioned by older styles */
+    #service-form,
+    #social-media-div {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #contact .contact {
+        flex-direction: column !important;
+        align-items: stretch;
+        gap: 16px;
+    }
+
+    #contact .contact>div {
+        flex: 0 0 100% !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 12px 16px;
+        text-align: center;
+    }
+
+    /* Make sure internal controls do not overflow their container */
+    #service-form,
+    #service-form * {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    /* If icons were previously absolutely positioned, neutralize that */
+    .input-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .input-container .icon,
+    .input-container i {
+        position: static;
+        margin: 0;
+        flex: 0 0 auto;
+    }
+
+    /* keep social icons centered and on their own line */
+    #social-media {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    header {
+        padding: 5px 5px;
+    }
+
+    .header-content h1 {
+        font-size: 2em;
+    }
+
+    .nav ul {
+        margin-top: 5px;
+    }
+
+    .nav ul li {
+        margin: 5px 0;
+    }
+
+    .contact {
+        padding: 0 0 0 0;
+    }
+
+    #social-media {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    footer{
+        visibility: hidden;
+    }
 }
